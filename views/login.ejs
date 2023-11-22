@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #222; 
+            color: #fff; 
+        }
+
+        header {
+            background-color: #1a1a1a; 
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1 {
+            margin: 0;
+            color: #fff; 
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px; 
+        }
+
+        form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff; 
+        }
+
+        input {
+            width: calc(100% - 24px); 
+            padding: 12px;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            border: 1px solid #444; 
+            border-radius: 4px; 
+            background-color: #444; 
+            color: #fff; 
+            box-sizing: border-box; 
+        }
+
+        button {
+            background-color: #4caf50; 
+            color: white;
+            padding: 14px 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease; 
+        }
+
+        button:hover {
+            background-color: #45a049; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a; 
+            margin-top: auto;
+            border-radius: 0 0 8px 8px; 
+        }
+
+        footer h3 {
+            margin: 0;
+            color: #fff; 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <header>
+        <h1>Login Page</h1>
+    </header>
+    <main>
+        <form method="POST" action="/user/login">
+            <label>Email:</label>
+            <input type="email" required name="email" placeholder="Enter your Email:" />
+            <br/>
+            <label>Password:</label>
+            <input type="password" required name="password" placeholder="Enter your Password:" />
+            <br/>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    <footer>
+        <h3>Copyright © Reserved to Varun Bajpai</h3>
+    </footer>
+</body>
+</html>
